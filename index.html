@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gilligan's Irish Pub</title>
+
+    <!-- mobile setup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="Mendeleev Bar" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style-white.css">
+
+    <!-- Page description -->
+    <meta name="description" content="">
+
+    <!-- Favicons -->
+    <link rel="SHORTCUT ICON" href="http://mendeleevbar.ru/favicon.ico">
+    <link rel="apple-touch-icon" href="http://mendeleevbar.ru/assets/img/favicons/home-icon.png">
+
+</head>
+
+<body>
+
+    <!-- Top shadow -->
+    <div class="shadow"></div>
+    <!-- end top shadow -->
+
+    <!-- The splash screen -->
+    <div id="splash">
+        <div class="loader">
+            <a href="javascript:history.go(0);"><img class="splash-logo" src="assets/img/logo/logo.svg.url" /></a>
+            <div class="line"></div>
+        </div>
+    </div>
+    <!-- End of splash screen -->
+
+    <div id="wrapper">
+        <!-- main content -->
+        <main>
+            <header>
+                <a href="#" class="logo">
+                    <h1>Home</h1>
+                    <img src="assets/img/logo/logo.svg.url" />
+                </a>
+            </header>
+            <!-- The navigation -->
+            <nav class="strokes">
+                <ul id="navigation">
+                    <li>
+                        <a href="mendeleevbar.html" data-transition="slide-to-top">
+                            <section>
+                                <h1>Gilligan's</h1>
+                                <h5>Irish Pub</h5>
+                            </section>
+                            <footer>
+                                <i class="icon bg icon-LocationMarker"></i>
+                                <h5 class="serif">2959 Honolulu Ave | CA 91214</h5>
+                                <p>Los Angeles</p>
+                            </footer>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cocktails.html" data-transition="slide-to-top">
+                            <section>
+                                <h1>Cocktails</h1>
+                                <h5>Delicious Drinks</h5>
+                            </section>
+                            <footer>
+                                <i class="icon bg icon-Heart"></i>
+                                <h5 class="serif">Cocktail List</h5>
+                                <p>Dishes and drinks</p>
+                            </footer>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="events.html" data-transition="slide-to-top">
+                            <section>
+                                <h1>Gallery</h1>
+                                <h5>Activities</h5>
+                            </section>
+                            <footer>
+                                <i class="icon bg icon-Star"></i>
+                                <h5 class="serif">Special Events</h5>
+                                <p></p>
+                            </footer>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="music.html" data-transition="slide-to-top">
+                            <section>
+                                <h1>Music</h1>
+                                <h5>Showcase</h5>
+                            </section>
+                            <footer>
+                                <i class="icon bg icon-Music"></i>
+                                <h5 class="serif">Media</h5>
+                                <p>Internet Broadcasting</p>
+                            </footer>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End navigation -->
+            <div class="overlay"></div>
+            
+        </main>
+        <!-- end of main content -->
+    </div>
+
+    <!-- The slideshow -->
+    <ul id="slideshow" data-speed="6000">
+        <li>
+            <img src="./assets/img/slideshow/1.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/2.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/3.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/4.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/5.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/6.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/7.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/8.jpg" alt="slideshow image" />
+        </li>
+        <li>
+            <img src="./assets/img/slideshow/9.jpg" alt="slideshow image" />
+        </li>
+    </ul>
+    <!-- end of slideshow -->
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/history.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/modernizr.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/page.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/jquery-2.2.3.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/backgroundvideo/backgroundvideo.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/photoswipe/photoswipe.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/photoswipe/photoswipe-ui-default.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/libs/remodal/remodal.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/custom/slidenavigation.js"></script>
+    <!-- end of scripts -->
+    <!-- scripts -->
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+    <!-- end of scripts -->
+
+</body>
+
+</html>
